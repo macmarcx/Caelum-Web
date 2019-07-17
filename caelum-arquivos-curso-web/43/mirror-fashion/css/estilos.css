@@ -1,6 +1,18 @@
+/* -----Corpo do HTML---- */
 body{
     color: #333333;
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+/* ---- Header ------ */
+header{
+    position: relative;
+}
+
+/* -----Container----- */
+.container{
+    margin: 0 auto;
+    width: 940px;
 }
 .sacola{
     background-image: url(../img/sacola.png);
@@ -15,6 +27,8 @@ body{
     top:0;
     right: 0;
 }
+
+/* -----Menu------- */
 .menu-opcoes{
     position: absolute;
     bottom: 0;
@@ -30,12 +44,10 @@ body{
 .menu-opcoes a{
     color: #003366;
 }
-.container{
-    margin: 0 auto;
-    width: 940px;
-}
-header{
-    position: relative;
+
+/* ------Main------ */
+.destaque{
+    margin-top: 10px;
 }
 .busca,
 .menu-departamentos {
@@ -51,6 +63,9 @@ header{
 .menu-departamentos h2{
     margin: 10px;
 }
+.busca input[type=search]{
+    width: 170px
+}
 .menu-departamentos li{
     background-color: white;
     margin-bottom: 1px;
@@ -64,16 +79,13 @@ header{
     clear: left;
     text-transform: uppercase;
 }
-.busca input[type=search]{
-    width: 170px
-}
-.destaque{
-    margin-top: 10px;
-}
+
 .menu-departamentos{
     margin-top: 10px;
     padding-bottom: 10px;
 }
+
+/* -----Article------- */
 .painel{
     margin: 10px 0;
     padding: 10px;
@@ -105,4 +117,42 @@ header{
 .mais-vendidos{
     float: right;
     background-color: #dcdcf5;
+}
+
+/* -------Footer--------- */
+footer{
+    background-image: url(../img/fundo-rodape.png);
+    clear: both;
+    padding: 20px 0;
+}
+footer .container{
+    position: relative;
+}
+.social{
+    /* posição das imagens*/
+    position: absolute;
+    top: 12px;
+    right: 0;
+}
+.social a{
+    /* tamanho da imagem */
+    height: 32px;
+    width: 32px;
+
+    /* image replacement */
+    display: block;
+    text-indent: -9999px;
+}
+.social a[href*="facebook.com"]{
+    background-image: url(../img/facebook.png);
+}
+.social a[href*="twitter.com"]{
+    background-image: url(../img/twitter.png);
+}
+.social a[href*="plus.google.com"]{
+    background-image: url(../img/googleplus.png);
+}
+.social li{
+    float: left;
+    margin-left: 25px;
 }
