@@ -26,6 +26,18 @@ p{
     text-indent: 15px;
     text-align: justify;
 }
+p::first-letter{
+    font-weight: bold;
+}
+h1 + p{
+    text-indent: 0;
+}
+p::first-line{
+    font-variant: small-caps;
+}
+:not(p) + p::first-line{
+    font-variant: small-caps;
+}
 figure{
     padding: 15px;
     margin: 30px;
@@ -51,4 +63,42 @@ footer img{
 #familia-pelho{
     float: right;
     margin: 0 0 10px 10px;
+}
+
+/* -------Footer--------- */
+footer{
+    background-image: url(../img/fundo-rodape.png);
+    clear: both;
+    padding: 20px 0;
+}
+footer .container{
+    position: relative;
+}
+.social{
+    /* posição das imagens*/
+    position: absolute;
+    top: 12px;
+    right: 0;
+}
+.social a{
+    /* tamanho da imagem */
+    height: 32px;
+    width: 32px;
+
+    /* image replacement */
+    display: block;
+    text-indent: -9999px;
+}
+.social a[href*="facebook.com"]{
+    background-image: url(../img/facebook.png);
+}
+.social a[href*="twitter.com"]{
+    background-image: url(../img/twitter.png);
+}
+.social a[href*="plus.google.com"]{
+    background-image: url(../img/googleplus.png);
+}
+.social li{
+    float: left;
+    margin-left: 25px;
 }

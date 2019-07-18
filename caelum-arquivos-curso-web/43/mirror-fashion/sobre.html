@@ -5,44 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Sobre a Mirror Fashion</title>
-    <link rel="stylesheet" href="css/sobre.css">
+    <link rel="stylesheet" href="css/sobre.css"> <!-- CSS -->
     <!-- [if 1t IE 9] -->
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script> <!-- JS -->
     <!-- [endif] -->
 </head>
 <body>
-    <!-- Logo da Mirror Fashion -->
-    <img src="img/logo.png" alt="Logo da Mirror Fashion">
+    <!-- Cabeçalho da Página -->
+    <header>
+        <!-- Logo da Mirror Fashion -->
+        <img src="img/logo.png" alt="Logo da Mirror Fashion">
+    </header>
 
-    <!-- Seção da Mirror Fashion -->
-    <h1>A Mirror Fashion</h1>
-    <p>
-        A <strong>Mirror Fashion</strong> é a maior empresa comércio eletrônico no segmento de moda em todo o mundo. 
-        Fundada em 1932, possui filiais em 124 países, sendo líder de mercado com mais de 90% de 
-        participação em 118 deles.
-    </p>
-    <p>
-        Nosso centro de distribuição fica em Jacarezinho, no Paraná. De lá, saem 48 aviões que 
-            distribuem nossos produtos às casas do mundo todo. Nosso centro de distribuição: 
-            
-            <!-- Link para o Google Maps -->
-            <a href="https://maps.google.com.br/?q=Jacarezinho">
-                Jacarezinho, no Paraná
-            </a>
-    </p>
+    <!-- Main -->
+    <main class="principal">
+        <!-- Seção da Mirror Fashion -->
+        <h1>A Mirror Fashion</h1>
+        <p>
+            A <strong>Mirror Fashion</strong> é a maior empresa comércio eletrônico no segmento de moda em todo o mundo. 
+            Fundada em 1932, possui filiais em 124 países, sendo líder de mercado com mais de 90% de 
+            participação em 118 deles.
+        </p>
+        <p>
+            Nosso centro de distribuição fica em Jacarezinho, no Paraná. De lá, saem 48 aviões que 
+                distribuem nossos produtos às casas do mundo todo. Nosso centro de distribuição: 
+                
+                <!-- Link para o Google Maps -->
+                <a href="https://maps.google.com.br/?q=Jacarezinho">
+                    Jacarezinho, no Paraná
+                </a>
+        </p>
 
-    <!-- Imagem sobre o Centro de Distribuição -->
-    <figure id="centro-distribuicao">
-        <img src="img/centro-distribuicao.png" alt="Foto do centro de distribuição da Mirror Fashion">
-        <figcaption>Centro de distribuição da Mirror Fashion</figcaption>
-    </figure>
+        <!-- Imagem sobre o Centro de Distribuição -->
+        <figure id="centro-distribuicao">
+            <img src="img/centro-distribuicao.png" alt="Foto do centro de distribuição da Mirror Fashion">
+            <figcaption>Centro de distribuição da Mirror Fashion</figcaption>
+        </figure>
 
-    <!-- Link externo para a página index.html, e referências para conteúdo dentro da página -->
-    <p>
-        Compre suas roupas e acessórios na <strong>Mirror Fashion</strong>. Acesse <a href="index.html">nossa loja</a> ou entre em contato 
-        se tiver dúvidas. Conheça também nossa <a href="#historia">história</a> e nossos <a href="#diferenciais">diferenciais</a>.
-    </p>
-
+        <!-- Link externo para a página index.html, e referências para conteúdo dentro da página -->
+        <p>
+            Compre suas roupas e acessórios na <strong>Mirror Fashion</strong>. Acesse <a href="index.html">nossa loja</a> ou entre em contato 
+            se tiver dúvidas. Conheça também nossa <a href="#historia">história</a> e nossos <a href="#diferenciais">diferenciais</a>.
+        </p>
+    </main>
     <!-- Seção de História -->
     <h2 id="historia">História</h2>
 
@@ -90,9 +95,18 @@
     </ul>
 
     <!-- Rodapé da Página -->
+        
     <footer>
-        <img src="img/logo.png" alt="Logo da Mirror Fashion">
-        &copy; Copyright Mirro Fashion
+        <div class="container">
+            <img src="img/logo.png" alt="Logo da Mirror Fashion">
+            &copy; Copyright Mirro Fashion
+    
+           <ul class="social">
+               <li><a href="http://facebook.com/mirrofashion">Facebook</a></li>
+               <li><a href="http://twitter.com/mirrofashion">Twitter</a></li>
+               <li><a href="http://plus.google.com/mirrorfashion">Google+</a></li>
+           </ul>
+       </div>
     </footer>
 </body>
 </html>
