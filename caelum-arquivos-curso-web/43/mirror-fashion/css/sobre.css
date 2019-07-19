@@ -1,25 +1,49 @@
+/* -----Corpo do HTML---- */
+html{
+    scroll-behavior:smooth;
+}
 body{
     color: #333333;
-    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;  
+}
+
+/* -----Container----- */
+.container{
     margin-left: auto;
     margin-right: auto;
     width: 940px;
 }
-h1{
+
+/* -----Main------- */
+.principal h1{
     background-image: url(../img/sobre-background.jpg);
     padding: 10px;
 }
-h2{
+#centro-distribuicao{
+    margin-left: auto;
+    margin-right: auto;
+    width: 550px;
+}
+
+/* -----Article------- */
+.pelho h2{
     border-bottom: 2px solid #333333;
     margin-top: 30px;
+}
+#familia-pelho{
+    float: right;
+    margin: 0 0 10px 10px;
 }
 figure{
     background-color: #f2eded;
     border: 1px solid #ccc;
     text-align: center;
+    padding: 15px;
+    margin: 30px;
 }
 figcaption{
     font-style: italic;
+    margin-top: 10px;
 }
 p{
     padding: 0 45px;
@@ -38,31 +62,13 @@ p::first-line{
 :not(p) + p::first-line{
     font-variant: small-caps;
 }
-figure{
-    padding: 15px;
-    margin: 30px;
+
+/* ---------Section-------- */
+.lista-diferenciais ul{
+    padding: 5px 0px;
 }
-figcaption{
-    margin-top: 10px;
-}
-#centro-distribuicao{
-    margin-left: auto;
-    margin-right: auto;
-    width: 550px;
-}
-footer{
-    color: #777;
-    margin: 30px 0;
-    padding: 30px 0;
-}
-footer img{
-    margin-right: 30px;
-    vertical-align: middle;
-    width: 94px;
-}
-#familia-pelho{
-    float: right;
-    margin: 0 0 10px 10px;
+.lista-diferenciais li{
+    padding: 0px 3px 0px 45px;
 }
 
 /* Precisa arrumar o footer */
@@ -102,4 +108,44 @@ footer .container{
 .social li{
     float: left;
     margin-left: 25px;
+}
+
+/* ----Mobile-Responsive---- */
+@media(max-width: 939px){
+    .container{
+        width: 96%;
+    }
+    main{
+        max-width: 100%;
+    }
+    main h1{
+        text-align: center;
+    }
+    header img{
+        max-width: 100%;
+    }
+  
+    @media(min-width: 480px){
+        html{
+            width: 96%;
+        }
+        main h1{
+            text-align: center;
+        }
+        main h1{
+            margin: 5px 0;
+        }
+    }
+    @media (min-width: 720px) {
+        html{
+            width: 96%;
+        }
+        main h1{
+            text-align: center;
+        }
+        main h1{
+            text-align: left;
+        }
+    }
+
 }
