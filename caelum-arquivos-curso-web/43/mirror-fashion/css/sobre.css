@@ -132,47 +132,40 @@ footer .container{
 /* Resolução de 939px */
 @media(max-width: 939px){
     .container{
-        width: 96%;
+        width: auto;
+        
     }
-    
-    main{
-        max-width: 100%;
+    .container img{
+        max-width: 50%;
     }
-
     main h1{
         text-align: center;
+        max-width: auto;
     }
-
-    header img{
-        max-width: 100%;
+    main p{
+        width: auto;
+        align-items: center;
     }
+    
     /* Resolução de 480px */
     @media(min-width: 480px){
         html{
-            width: 96%;
+            width: 100%;
         }
 
-        main h1{
-            text-align: center;
+        h1{
+            width: 100%;
         }
 
-        main h1{
-            margin: 5px 0;
-        }
+    }  
 
-    }
     /* Resolução de 720px */
     @media (min-width: 720px) {
         html{
-            width: 96%;
+            width: 100%;
         }
-
-        main h1{
-            text-align: center;
-        }
-
-        main h1{
-            text-align: left;
+        h1{
+            width: 100%;
         }
 
     }
