@@ -2,6 +2,7 @@
 html{
     scroll-behavior:smooth;
 }
+
 body{
     color: #333333;
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;  
@@ -19,6 +20,7 @@ body{
     background-image: url(../img/sobre-background.jpg);
     padding: 10px;
 }
+
 #centro-distribuicao{
     margin-left: auto;
     margin-right: auto;
@@ -30,10 +32,12 @@ body{
     border-bottom: 2px solid #333333;
     margin-top: 30px;
 }
+
 #familia-pelho{
     float: right;
     margin: 0 0 10px 10px;
 }
+
 figure{
     background-color: #f2eded;
     border: 1px solid #ccc;
@@ -41,24 +45,30 @@ figure{
     padding: 15px;
     margin: 30px;
 }
+
 figcaption{
     font-style: italic;
     margin-top: 10px;
 }
+
 p{
     padding: 0 45px;
     text-indent: 15px;
     text-align: justify;
 }
+
 p::first-letter{
     font-weight: bold;
 }
+
 h1 + p{
     text-indent: 0;
 }
+
 p::first-line{
     font-variant: small-caps;
 }
+
 :not(p) + p::first-line{
     font-variant: small-caps;
 }
@@ -67,6 +77,7 @@ p::first-line{
 .lista-diferenciais ul{
     padding: 5px 0px;
 }
+
 .lista-diferenciais li{
     padding: 0px 3px 0px 45px;
 }
@@ -78,15 +89,18 @@ footer{
     clear: both;
     padding: 20px 0;
 }
+
 footer .container{
     position: relative;
 }
+
 .social{
     /* posição das imagens*/
     position: absolute;
     top: 12px;
     right: 0;
 }
+
 .social a{
     /* tamanho da imagem */
     height: 32px;
@@ -96,56 +110,71 @@ footer .container{
     display: block;
     text-indent: -9999px;
 }
+
 .social a[href*="facebook.com"]{
     background-image: url(../img/facebook.png);
 }
+
 .social a[href*="twitter.com"]{
     background-image: url(../img/twitter.png);
 }
+
 .social a[href*="plus.google.com"]{
     background-image: url(../img/googleplus.png);
 }
+
 .social li{
     float: left;
     margin-left: 25px;
 }
 
 /* ----Mobile-Responsive---- */
+/* Resolução de 939px */
 @media(max-width: 939px){
     .container{
         width: 96%;
     }
+    
     main{
         max-width: 100%;
     }
+
     main h1{
         text-align: center;
     }
+
     header img{
         max-width: 100%;
     }
-  
+    /* Resolução de 480px */
     @media(min-width: 480px){
         html{
             width: 96%;
         }
+
         main h1{
             text-align: center;
         }
+
         main h1{
             margin: 5px 0;
         }
+
     }
+    /* Resolução de 720px */
     @media (min-width: 720px) {
         html{
             width: 96%;
         }
+
         main h1{
             text-align: center;
         }
+
         main h1{
             text-align: left;
         }
+
     }
 
 }
