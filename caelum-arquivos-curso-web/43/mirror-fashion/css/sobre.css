@@ -128,45 +128,45 @@ footer .container{
     margin-left: 25px;
 }
 
+/* Precisa corrigir o layout mobile */
 /* ----Mobile-Responsive---- */
 /* Resolução de 939px */
 @media(max-width: 939px){
     .container{
-        width: auto;
-        
+        width: 31%;
     }
-    .container img{
-        max-width: 50%;
+    header img{
+        padding: 10px 44px 10px;
+        margin: 0;
     }
-    main h1{
+    .principal h1{
+        width: 31%;
+        margin:0;
         text-align: center;
-        max-width: auto;
     }
-    main p{
-        width: auto;
-        align-items: center;
+    .principal p{
+        text-align: center;
+        padding: 0px 25px;
+    }
+    #centro-distribuicao{
+        margin: 0px 0px 0px 0px;
+        padding: 0;
+        width: 96%;
+    }
+    #centro-distribuicao img{
+        width: 31%;
+        border: none;
     }
     
     /* Resolução de 480px */
     @media(min-width: 480px){
-        html{
-            width: 100%;
-        }
-
-        h1{
-            width: 100%;
-        }
+        
 
     }  
 
     /* Resolução de 720px */
     @media (min-width: 720px) {
-        html{
-            width: 100%;
-        }
-        h1{
-            width: 100%;
-        }
+
 
     }
 
