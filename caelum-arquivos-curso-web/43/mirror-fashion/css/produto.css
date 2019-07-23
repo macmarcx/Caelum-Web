@@ -1,3 +1,52 @@
+/* Div do Produto-Back */
+.produto-back{
+    background-color: #f2f2f2;
+    margin-top: 1em;
+    border-top: 2px solid #ccc;
+}
+
+/* Section de Produtos */
+.produtos{
+    color: #333;
+    line-height: 1.3;
+    margin-top: 2em;
+}
+
+.produto h2{
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+.produto p{
+    font-size: 1.2em;
+    font-style: italic;
+    margin-bottom: 1em;
+}
+
+.produto legend{
+    display: block;
+    font: bold 0.9em/2.5 Arial;
+    text-transform: uppercase;
+}
+
+/* Fieldset de Produtos */
+.cores{
+    position: relative;
+    padding-top: 90px;
+}
+
+.cores input:checked + label::after{
+    border: 6px solid rgba(0,0,0,0.3);
+}
+
+.cores input[type=radio]{
+    display: none;
+}
+
+.cores input:not(:checked) + label img{
+    display: none;
+}
+
 .cores label::after{
     content: "";
     display: block;
@@ -5,67 +54,63 @@
     width: 50px;
     height: 50px;
 }
+
 .cores label[for=verde]::after{
     background-color: #33cc66;
 }
+
 .cores label[for=rosa]::after{
     background-color: #ff6666;
 }
+
 .cores label[for=azul]::after{
     background-color: #6666ff;
 }
-.cores input:checked + label::after{
-    border: 6px solid rgba(0,0,0,0.3);
-}
+
 .cores label::after{
     box-sizing: border-box;
 }
-.cores input[type=radio]{
-    display: none;
-}
-.cores input:not(:checked) + label img{
-    display: none;
-}
+
 .cores label::after{
     position: absolute;
     top: 30px;
 }
-.cores{
-    position: relative;
-    padding-top: 90px;
-}
+
 .cores label[for=verde]::after{
     left: 0;
 }
+
 .cores label[for=rosa]::after{
     left: 60px;
 }
+
 .cores label[for=azul]::after{
     left: 120px;
 }
+
 .cores label img{
     display: block;
     max-width: 100%;
 }
-.produtos{
-    color: #333;
-    line-height: 1.3;
-    margin-top: 2em;
+
+.cores label::after{
+    border: 6px solid rgba(0,0,0,0);
+    transition: 1s;
 }
-.produto h2{
-    font-size: 1.8em;
-    font-weight: bold;
+
+.cores label:hover::after{
+    border: 6px solid rgba(0,0,0,0.1);
 }
-.produto p{
-    font-size: 1.2em;
-    font-style: italic;
-    margin-bottom: 1em;
+
+.cores label::after{
+    cursor: pointer;
 }
-.produto legend{
-    display: block;
-    font: bold 0.9em/2.5 Arial;
-    text-transform: uppercase;
+
+/* Button de Comprar */
+.comprar{
+    cursor: pointer;
 }
+
 .comprar{
     background-color: #91bd3c;
     border: none;
@@ -77,19 +122,8 @@
     padding: 0.5em 1em;
     margin: 1em 0;
 }
-.cores label::after{
-    border: 6px solid rgba(0,0,0,0);
-    transition: 1s;
-}
-.cores label:hover::after{
-    border: 6px solid rgba(0,0,0,0.1);
-}
-.cores label::after{
-    cursor: pointer;
-}
-.comprar{
-    cursor: pointer;
-}
+
+/* Fieldset de Tamanhos */
 .tamanhos output{
     display: inline-block;
     height: 44px;
@@ -100,44 +134,51 @@
     border-radius: 50%;
     color: #555;
 }
+
+/* Section de Detalhes */
 .detalhes{
     padding: 2em 0;
 }
+
 .detalhes h2{
     font-size: 1.5em;
     line-height: 2;
 }
+
 .detalhes p{
     margin: 1em 0;
     font-size: 1em;
     line-height: 1.5;
 }
+
 .detalhes table{
     border-spacing: 0.2em;
     border-collapse: separate;
 }
+
 .detalhes thead{
     background-color: #999;
 }
+
 .detalhes thead th{
     font-weight: bold;
     padding: 0.3em 1em;
     text-align: center;
 }
+
 .detalhes td{
     padding: 0.3em;
 }
+
 .detalhes tr:nth-child(2n){
     background-color: #ccc;
 }
+
 .detalhes td:first-child{
     font-style: italic;
 }
-.produto-back{
-    background-color: #f2f2f2;
-    margin-top: 1em;
-    border-top: 2px solid #ccc;
-}
+
+
 .cores label img{
     border: 2px solid #ccc;
 }
@@ -152,13 +193,16 @@
         position: relative;
         padding-left: 40%;
     }
+
     .cores{
         position: static;
         padding: 0;
     }
+
     .cores legend{
         position: static;
     }
+
     .cores label img{
         position: absolute;
         top: 0;
@@ -166,14 +210,17 @@
         max-width: 35%;
         max-height: 100%;
     }
+
     .cores label::after{
         position: static;
         float: left;
         margin-right: 10px
     }
+
     .produto{
         font-size: 1.2em;
     }
+
     .produto fieldset{
         display: inline-block;
         vertical-align: top;

@@ -65,13 +65,6 @@ h1 + p{
     text-indent: 0;
 }
 
-p::first-line{
-    font-variant: small-caps;
-}
-
-:not(p) + p::first-line{
-    font-variant: small-caps;
-}
 
 /* ---------Section-------- */
 .lista-diferenciais ul{
@@ -127,23 +120,30 @@ footer .container{
     float: left;
     margin-left: 25px;
 }
+
+/* Videos */
 .video h2{
     border-bottom: 2px solid #333333;
     margin-top: 30px;
 }
+
 .video-central{
     text-align: center;
 }
 .video-central iframe{
     padding: 10px 0 10px;
 }
+
+/* Mapas */
 .mapas h2{
     border-bottom: 2px solid #333333;
     margin-top: 30px;
 }
+
 .mapas-central{
     text-align: center;    
 }
+
 .mapas-central iframe{
     padding: 10px 0 10px;
     width: 800px; 
@@ -153,44 +153,363 @@ footer .container{
 
 /* Precisa corrigir o layout mobile */
 /* ----Mobile-Responsive---- */
-/* Resolução de 939px */
-@media(max-width: 939px){
+
+/* Resolução de 320px */
+@media(max-width: 320px){
     .container{
-        width: 31%;
+        width: 290px;
+        padding: 5px 0px 5px 0px;
+        margin: 0 auto;
     }
-    header img{
-        padding: 10px 44px 10px;
-        margin: 0;
-    }
-    .principal h1{
-        width: 31%;
-        margin:0;
+
+    header{
         text-align: center;
     }
-    .principal p{
+
+    main h1{
         text-align: center;
-        padding: 0px 25px;
     }
+
+    main p{
+        padding: 5px 0;
+    }
+
+    article p{
+        padding: 5px 0;
+    }
+
+    h2{
+        font-weight: bold;
+    }
+
+    .lista-diferenciais ul li{
+        padding: 2px 0;
+    }
+
     #centro-distribuicao{
-        margin: 0px 0px 0px 0px;
-        padding: 0;
-        width: 96%;
+        width: 255px;
     }
-    #centro-distribuicao img{
-        width: 31%;
-        border: none;
+    .pelho figure{
+        padding: 10px 0 0 0;
+        
+    }
+    #familia-pelho{
+        width: 290px;
+        margin: 0;
+        border: 0;
+    }
+
+    .principal img{
+        width: 255px;
+    }
+
+    .pelho img{
+        width: 270px;
+    }
+    .pelho figcaption{
+        padding: 10px 0;
+    }
+
+    footer{
+        width:320px;
+    }
+    .video-central iframe{
+        width: 290px;
+        height: 250px;
+    }
+
+    .mapas-central iframe{
+        width: 290px;
+        height: 250px;
+    }
+}
+
+/* Resolução de 375px */
+@media(min-width: 375px){
+    .container{
+        width: 320px;
+        padding: 5px 0px 5px 0px;
+        margin: 0 auto;
+    }
+
+    header{
+        text-align: center;
+    }
+
+    main h1{
+        text-align: center;
+    }
+
+    main p{
+        padding: 5px 0;
+    }
+
+    article p{
+        padding: 5px 0;
+    }
+
+    h2{
+        font-weight: bold;
+    }
+
+    .lista-diferenciais ul li{
+        padding: 2px 0;
+    }
+
+    #centro-distribuicao{
+        width: 280px;
+    }
+    .pelho figure{
+        padding: 10px 0 0 0;
+        
+    }
+    #familia-pelho{
+        width: 320px;
+        margin: 0;
+        border: 0;
+    }
+
+    .principal img{
+        width: 280px;
+    }
+
+    .pelho img{
+        width: 290px;
+    }
+    .pelho figcaption{
+        padding: 0 0 10px 0;
+    }
+    .video-central iframe{
+        width: 320px;
+        height: 250px;
+    }
+
+    .mapas-central iframe{
+        width: 320px;
+        height: 250px;
+    }
+
+    footer{
+        width:375px;
+    }
+}
+
+/* Resolução de 414px */
+@media (min-width: 414px) {
+    .container{
+        width: 380px;
+        padding: 5px 0px 5px 0px;
+        margin: 0 auto;
+    }
+    header{
+        text-align: center;
+    }
+
+    main h1{
+        text-align: center;
+    }
+
+    main p{
+        padding: 5px 0;
+    }
+
+    article p{
+        padding: 5px 0;
+    }
+
+    h2{
+        font-weight: bold;
+    }
+
+    .lista-diferenciais ul li{
+        padding: 2px 0;
+    }
+
+    #centro-distribuicao{
+        width: 340px;
+    }
+
+    .pelho figure{
+        padding: 10px 0 0 0;
+        
+    }
+
+    #familia-pelho{
+        width: 380px;
+        margin: 0;
+        border: 0;
+    }
+
+    .principal img{
+        width: 340px;
+    }
+
+    .pelho img{
+        width: 350px;
+    }
+
+    .pelho figcaption{
+        padding: 0 0 10px 0;
+    }
+    .video-central iframe{
+        width: 380px;
+        height: 250px;
+    }
+
+    .mapas-central iframe{
+        width: 380px;
+        height: 250px;
+    }
+    footer{
+        width:414px;
+    }
+}
+
+/* Resolução de 768px */
+@media(min-width: 768px){
+    .container{
+        width: 720px;
+        padding: 5px 0px 5px 0px;
+        margin: 0 auto;
+    }
+
+    header{
+        text-align: center;
+    }
+
+    main h1{
+        text-align: center;
+    }
+
+    main p{
+        padding: 5px 0;
+    }
+
+    article p{
+        padding: 5px 0;
+    }
+
+    h2{
+        font-weight: bold;
+    }
+
+    .lista-diferenciais ul li{
+        padding: 2px 0;
+    }
+
+    #centro-distribuicao{
+        width: 650px;
+    }
+
+    .pelho figure{
+        padding: 10px 0 0 0;
+        
+    }
+
+    #familia-pelho{
+        width: 350px;
+        margin: 0;
+        border: 0;
+    }
+
+    .principal img{
+        width: 640px;
+    }
+
+    .pelho img{
+        width: 330px;
+    }
+
+    .pelho figcaption{
+        padding: 0 0 10px 0;
+    }
+
+    .video-central iframe{
+        width: 720px;
+        height: 250px;
+    }
+
+    .mapas-central iframe{
+        width: 720px;
+        height: 250px;
+    }   
+
+    footer{
+        width:768px;
+    }
+}
+
+/* Resolução de 1024px */
+@media(min-width:1024px){
+    .container{
+        width: 980px;
+        padding: 5px 0px 5px 0px;
+        margin: 0 auto;
+    }
+
+    header{
+        text-align: center;
+    }
+
+    main h1{
+        text-align: center;
+    }
+
+    main p{
+        padding: 5px 0;
+    }
+
+    article p{
+        padding: 5px 0;
+    }
+
+    h2{
+        font-weight: bold;
+    }
+
+    .lista-diferenciais ul li{
+        padding: 2px 0;
+    }
+
+    #centro-distribuicao{
+        width: 920px;
     }
     
-    /* Resolução de 480px */
-    @media(min-width: 480px){
+    .pelho figure{
+        padding: 10px 0 0 0;
         
-
-    }  
-
-    /* Resolução de 720px */
-    @media (min-width: 720px) {
-
-
     }
 
+    #familia-pelho{
+        width: 430px;
+        margin: 0;
+        border: 0;
+    }
+
+    .principal img{
+        width: 890px;
+    }
+
+    .pelho img{
+        width: 400px;
+    }
+
+    .pelho figcaption{
+        padding: 0 0 10px 0;
+    }
+    .video-central iframe{
+        width: 940px;
+        height: 250px;
+    }
+
+    .mapas-central iframe{
+        width: 980px;
+        height: 250px;
+    }
+    footer{
+        width:1024px;
+    }
 }
+
+
+
