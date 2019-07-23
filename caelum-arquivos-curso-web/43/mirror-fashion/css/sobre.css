@@ -75,7 +75,6 @@ h1 + p{
     padding: 0px 3px 0px 45px;
 }
 
-/* Precisa arrumar o footer */
 /* -------Footer--------- */
 footer{
     background-image: url(../img/fundo-rodape.png);
@@ -151,14 +150,12 @@ footer .container{
     border: 0;
 }
 
-/* Precisa corrigir o layout mobile */
 /* ----Mobile-Responsive---- */
-
 /* Resolução de 320px */
 @media(max-width: 320px){
     .container{
-        width: 290px;
-        padding: 5px 0px 5px 0px;
+        width: 96%;
+        padding: 5px 0px 5px 3px;
         margin: 0 auto;
     }
 
@@ -187,48 +184,124 @@ footer .container{
     }
 
     #centro-distribuicao{
-        width: 255px;
+        width: 85%;
     }
+
     .pelho figure{
         padding: 10px 0 0 0;
         
     }
+
     #familia-pelho{
-        width: 290px;
+        width: 100%;
         margin: 0;
         border: 0;
     }
 
     .principal img{
-        width: 255px;
+        width: 100%;
     }
 
     .pelho img{
-        width: 270px;
+        width: 90%;
     }
+
     .pelho figcaption{
         padding: 10px 0;
     }
 
-    footer{
-        width:320px;
-    }
     .video-central iframe{
-        width: 290px;
-        height: 250px;
+        width: 96%;
+        height: 100%;
     }
 
     .mapas-central iframe{
-        width: 290px;
-        height: 250px;
+        width: 96%;
+        height: 100%;
+    }
+
+    footer{
+        width:100%;
+    }
+}
+
+/* Resolução de 360px */
+@media(min-width: 360px){
+    .container{
+        width: 96%;
+        padding: 5px 0px 5px 3px;
+        margin: 0 auto;
+    }
+
+    header{
+        text-align: center;
+    }
+
+    main h1{
+        text-align: center;
+    }
+
+    main p{
+        padding: 5px 0;
+    }
+
+    article p{
+        padding: 5px 0;
+    }
+
+    h2{
+        font-weight: bold;
+    }
+
+    .lista-diferenciais ul li{
+        padding: 2px 0;
+    }
+
+    #centro-distribuicao{
+        width: 85%;
+    }
+
+    .pelho figure{
+        padding: 10px 0 0 0;
+        
+    }
+
+    #familia-pelho{
+        width: 100%;
+        margin: 0;
+        border: 0;
+    }
+
+    .principal img{
+        width: 100%;
+    }
+
+    .pelho img{
+        width: 90%;
+    }
+    .pelho figcaption{
+        padding: 10px 0;
+    }
+    .video-central iframe{
+        width: 96%;
+        height: 100%;
+    }
+
+    .mapas-central iframe{
+        width: 96%;
+        height: 100%;
+    }
+
+    footer{
+        width:100%;
     }
 }
 
 /* Resolução de 375px */
 @media(min-width: 375px){
     .container{
-        width: 320px;
-        padding: 5px 0px 5px 0px;
+        width: 96%;
+        padding: 5px 0px 5px 3px;
         margin: 0 auto;
     }
 
@@ -257,50 +330,53 @@ footer .container{
     }
 
     #centro-distribuicao{
-        width: 280px;
+        width: 85%;
     }
+
     .pelho figure{
         padding: 10px 0 0 0;
         
     }
+
     #familia-pelho{
-        width: 320px;
+        width: 100%;
         margin: 0;
         border: 0;
     }
 
     .principal img{
-        width: 280px;
+        width: 100%;
     }
 
     .pelho img{
-        width: 290px;
+        width: 90%;
     }
     .pelho figcaption{
-        padding: 0 0 10px 0;
+        padding: 10px 0;
     }
     .video-central iframe{
-        width: 320px;
-        height: 250px;
+        width: 96%;
+        height: 100%;
     }
 
     .mapas-central iframe{
-        width: 320px;
-        height: 250px;
+        width: 96%;
+        height: 100%;
     }
 
     footer{
-        width:375px;
+        width:100%;
     }
 }
 
 /* Resolução de 414px */
 @media (min-width: 414px) {
     .container{
-        width: 380px;
-        padding: 5px 0px 5px 0px;
+        width: 96%;
+        padding: 5px 0px 5px 3px;
         margin: 0 auto;
     }
+
     header{
         text-align: center;
     }
@@ -326,59 +402,61 @@ footer .container{
     }
 
     #centro-distribuicao{
-        width: 340px;
+        width: 85%;
     }
 
     .pelho figure{
         padding: 10px 0 0 0;
         
     }
-
+    
     #familia-pelho{
-        width: 380px;
+        width: 100%;
         margin: 0;
         border: 0;
     }
 
     .principal img{
-        width: 340px;
+        width: 100%;
     }
 
     .pelho img{
-        width: 350px;
+        width: 90%;
     }
 
     .pelho figcaption{
-        padding: 0 0 10px 0;
+        padding: 10px 0;
     }
+
     .video-central iframe{
-        width: 380px;
-        height: 250px;
+        width: 96%;
+        height: 100%;
     }
 
     .mapas-central iframe{
-        width: 380px;
-        height: 250px;
+        width: 96%;
+        height: 100%;
     }
+
     footer{
-        width:414px;
+        width:100%;
     }
 }
 
 /* Resolução de 768px */
 @media(min-width: 768px){
     .container{
-        width: 720px;
-        padding: 5px 0px 5px 0px;
+        width: 96%;
+        padding: 5px 0px 5px 3px;
         margin: 0 auto;
     }
 
     header{
-        text-align: center;
+        text-align: left;
     }
 
     main h1{
-        text-align: center;
+        text-align: left;
     }
 
     main p{
@@ -398,61 +476,65 @@ footer .container{
     }
 
     #centro-distribuicao{
-        width: 650px;
+        width: 85%;
     }
 
     .pelho figure{
         padding: 10px 0 0 0;
         
     }
-
+    
     #familia-pelho{
-        width: 350px;
+        width: 30%;
         margin: 0;
         border: 0;
     }
 
     .principal img{
-        width: 640px;
+        width: 98%;
+        margin: 0 auto;
+        padding: 0;
     }
 
     .pelho img{
-        width: 330px;
+        width: 90%;
+        margin: 0 auto;
+        padding: 0;
     }
 
     .pelho figcaption{
-        padding: 0 0 10px 0;
+        padding: 0px 0;
     }
 
     .video-central iframe{
-        width: 720px;
+        width: 96%;
         height: 250px;
     }
 
     .mapas-central iframe{
-        width: 720px;
-        height: 250px;
-    }   
+        width: 96%;
+        height: 270px;
+    }
 
     footer{
-        width:768px;
+        width:100%;
     }
 }
 
 /* Resolução de 1024px */
 @media(min-width:1024px){
     .container{
-        width: 980px;
-        padding: 5px 0px 5px 0px;
+        width: 96%;
+        padding: 5px 0px 5px 3px;
         margin: 0 auto;
     }
 
     header{
-        text-align: center;
+        text-align: left;
     }
 
     main h1{
-        text-align: center;
+        text-align: left;
     }
 
     main p{
@@ -472,42 +554,48 @@ footer .container{
     }
 
     #centro-distribuicao{
-        width: 920px;
+        width: 60%;
     }
-    
+
     .pelho figure{
         padding: 10px 0 0 0;
         
     }
-
+    
     #familia-pelho{
-        width: 430px;
+        width: 20%;
         margin: 0;
         border: 0;
     }
 
     .principal img{
-        width: 890px;
+        width: 98%;
+        margin: 0 auto;
+        padding: 0;
     }
 
     .pelho img{
-        width: 400px;
+        width: 90%;
+        margin: 0 auto;
+        padding: 0;
     }
 
     .pelho figcaption{
-        padding: 0 0 10px 0;
+        padding: 0px 0;
     }
+
     .video-central iframe{
-        width: 940px;
-        height: 250px;
+        width: 96%;
+        height: 300px;
     }
 
     .mapas-central iframe{
-        width: 980px;
-        height: 250px;
+        width: 96%;
+        height: 270px;
     }
+
     footer{
-        width:1024px;
+        width:100%;
     }
 }
 
