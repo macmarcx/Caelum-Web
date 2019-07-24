@@ -544,11 +544,13 @@ footer .container{
     article p{
         padding: 5px 0;
     }
-
+    article section{
+        padding: 2% 0;
+        margin: 1% 0;
+    }
     h2{
         font-weight: bold;
     }
-
     .lista-diferenciais ul li{
         padding: 2px 0;
     }
@@ -557,15 +559,17 @@ footer .container{
         width: 60%;
     }
 
-    .pelho figure{
+    .divisao figure{
         padding: 10px 0 0 0;
         
+    }
+    .divisao section{
+        margin: 0 0 10px 0;
     }
     
     #familia-pelho{
         width: 20%;
-        margin: 0;
-        border: 0;
+      
     }
 
     .principal img{
@@ -578,10 +582,6 @@ footer .container{
         width: 90%;
         margin: 0 auto;
         padding: 0;
-    }
-
-    .pelho figcaption{
-        padding: 0px 0;
     }
 
     .video-central iframe{
