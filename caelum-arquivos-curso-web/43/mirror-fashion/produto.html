@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/produto.css">
 </head>
 <body>
+    <!-- Inicio do Header -->
     <header class="container">
         <h1><img src="img/logo.png" alt="Logo da Mirror Fashion"></h1>
     
@@ -29,6 +30,8 @@
 
         </nav>
     </header>
+
+    <!-- Escolha da cor do produto -->
     <div class="produto-back">
         <div class="container">
             <section class="produto">
@@ -52,17 +55,23 @@
                         <label for="azul">
                             <img src="img/produtos/foto2-azul.png" alt="Produto na cor azul">
                         </label>
-
+                        
                     </fieldset>
+
                     <fieldset class="tamanhos">
                         <legend>Escolha o tamanho:</legend>
 
                         <input type="range" min="36" max="46" value="42" step="2" name="tamanho" id="tamanho">
                         <output for="tamanho" name="valortamanho">42</output>
+
                     </fieldset>
+
                     <button class="comprar">Comprar</button>
+
                 </form>
             </section>
+
+            <!-- Detalhes sobre o produto -->
             <section class="detalhes">
                 <h2>Detalhes do produto</h2>
                 <p>Camiseta confortável ideal para eventos casuais!</p>
@@ -93,18 +102,24 @@
             </section>
         </div>
     </div>
+
+    <!-- Footer -->
     <footer>
         <div class="container">
            <img src="img/logo-rodape.png" alt="Logo da Mirror Fashion">
     
            <ul class="social">
+
                <li><a href="http://facebook.com/mirrofashion">Facebook</a></li>
                <li><a href="http://twitter.com/mirrofashion">Twitter</a></li>
                <li><a href="http://plus.google.com/mirrorfashion">Google+</a></li>
+               
            </ul>
     
        </div>
     </footer>
+    
+    <!-- Chamada do arquivo JS -->
     <script src="js/produto.js"></script>
 </body>
 </html>

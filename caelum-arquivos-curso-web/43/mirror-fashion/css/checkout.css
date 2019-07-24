@@ -1,7 +1,9 @@
+/* Body */
 body{
     padding-top: 50px;
 }
+
+/* Output dos detalhes da compra */
 .form-control:invalid{
     border: 1px solid #cc0000;
 }
-

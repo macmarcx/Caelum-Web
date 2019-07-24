@@ -1,0 +1,14 @@
+.mensagem{
+    margin: 20px 0;
+    background-color: #404040;
+}
+.mensagem p{
+    color: #FFFFFF;
+}
+.icon p{
+    display: inline-block;
+}
+.icon img{
+    
+    width: 40px;
+}
