@@ -561,7 +561,6 @@ footer .container{
 
     .divisao figure{
         padding: 10px 0 0 0;
-        
     }
     .divisao section{
         margin: 0 0 10px 0;
@@ -569,7 +568,7 @@ footer .container{
     
     #familia-pelho{
         width: 20%;
-      
+        margin: 1px 0 0 20px;
     }
 
     .principal img{
