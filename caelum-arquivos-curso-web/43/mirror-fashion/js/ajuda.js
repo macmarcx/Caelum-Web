@@ -1,15 +1,12 @@
+function mostra(){
 
-/* Precisa corrigir a lógica */
-if($("#nome, #email, #cpf, #comentar") == " "){
-    $(document).ready(function(){
-      $("#button-submit").click(function(){
-        $("#demo").collapse('hide');
-      });
-    });
-}else if ($("#nome, #email, #cpf, #comentar") != ""){
-    $(document).ready(function(){
-      $("#button-submit").click(function(){
-        $("#demo").collapse('show');
-      });
-    });
+  let validaNome = nome.value 
+  let validaEmail = email.value
+  let validaCpf = cpf.value
+  let validaComentar = comentar.value
+  let textoValido = "Dados enviados com sucesso, agora é só aguardar que nossa equipe ira entrar em contato você em breve."
+
+  if(validaNome && validaEmail && validaCpf && validaComentar){
+    alert(textoValido)
+  }
 }
