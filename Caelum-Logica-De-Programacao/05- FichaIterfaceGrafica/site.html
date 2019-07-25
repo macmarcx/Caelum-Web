@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script src="https://rawgit.com/caelum/projeto01/fichaAcademiaComInterfaceGrafica/apostilaIgnore/libBrasil.js"></script>
+    <script src="https://rawgit.com/caelum/projeto01/fichaAcademiaComInterfaceGrafica/apostilaIgnore/mostra.js"></script>
+    <script src="https://rawgit.com/caelum/projeto01/calculoIdade/apostilaIgnore/libIdade.js"></script>
+    <h1>Ficha de Cadastro</h1>
+    Nome
+    <br>
+    <input type="text" id="campoNome" placeholder="Digite seu Nome">
+    <br><br>
+
+    Peso
+    <br>
+    <input type="text" id="campoPeso" placeholder="Informe seu Peso">
+    <br><br>
+
+    Altura
+    <br>
+    <input type="text" id="campoAltura" placeholder="Informe sua altura">
+    <br><br>
+
+    Data de Nascimento
+    <br>
+    <input type="text" id="campoData" placeholder="Informe sua Data de Nascimento">
+    <br><br>
+
+    <button onclick="criarFicha()">Enviar</button>
+
+    <script>
+        function criarFicha(){
+            // Pega valores digitados
+            let nome = campoNome.value
+            let peso = parseFloatBrasil(campoPeso.value)
+            let altura = parseFloatBrasil(campoAltura.value)
+            let dataNasc = campoData.value
+
+            // Preparar a data para cálculo da idade
+            let dataNascLista = dataNasc.split("/")
+            let dia = dataNascLista[0]
+            let mes = dataNascLista[1]
+            let ano = dataNascLista[2]
+            let frase = "Pessoa liberada para exercer atividade fisica"
+
+            // Cálculos
+            let idade = calculaIdade(dia, mes, ano)
+
+            //  TO DO:Verificar se a pessoa requer acompanhamento médico
+            //
+            if (idade < 16 ||idade > 49){
+                frase = "Pessoa requer acompanhamento médico"
+            }else{
+                frase = "Pessoa liberada para exercer atividade fisica"
+            }
+
+            // Solução com variáveis booleanas
+            // let requerAcompanhamento = (idade < 16 || idade > 49)
+            // let ehCrianca = idade < 16
+            // let ehAdultoMais = idade > 49
+            // if(requerAcompanhamento){
+            //     frase = "Pessoa requer acompanhamento médico"
+            // }
+
+            //Exibir os Resultados
+            mostra(`
+                <hr>
+                Nome: ${nome}
+                <hr>
+                Peso: ${formataFloatBrasil(peso)}
+                <hr>
+                Altura: ${formataFloatBrasil(altura)}
+                <hr>
+                Data de Nascimento: ${dataNasc}
+                <hr>
+                Idade: ${idade}
+                <hr>
+                ${frase}
+            `)
+            //console.log("Seu nome é ", nome + " você está com " + peso + "kg " + "sua altura é " + altura + "e sua data de nascimento é " + data)
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script src="pegaNumero.js"></script>
+    <h1>Calculadora Uber x Carro</h1>
+
+    <script>
+            /*
+            Fórmula do Uber 
+            Tempo em Horas = distância(prompt) / velocidade média 
+            - Considera velocidade média(const) = 25 km/h
+            - Tempo em minutos = tempo em horas * 60
+    
+            Total do custo com uber
+            - R$ 2 -> preço base
+            - R$ 1,40 para km rodado
+            - R$ 0,26 para minuto de viagem
+    
+            2 + (distância * 1.4) + (tempo em minutos * 0.26)
+    
+            Carro 
+    
+            Total de Gasolina = (distancia(prompt) / autonomia(prompt)) * preço da gasolina
+            Total bruto com carro = total do combustivel + custo de estacionamento
+    
+            */
+        </script>
+
+    <h2>Uber</h2>
+
+    <script>
+    // Uber
+
+        // Entrada de dados
+        let distancia = pegaNumero("Digite a distância: ")
+        const velocidadeMedia = 25
+        let tempoHora = distancia / velocidadeMedia
+        let tempoMinuto = tempoHora * 60
+        const base = 2
+        const kmRodado = 1.40
+        const minutoViagem = 0.26
+
+        // Cálculos
+        let custoTotal = base + (distancia * kmRodado) + (tempoMinuto * minutoViagem)
+        let horario = tempoMinuto / 60
+        // Saída de dados
+        /*
+        document.write("Tempo da viagem: " + horario + " hora "+ tempoMinuto + " minutos")
+        document.write("<br>")
+        document.write("Total de gasto com Uber: ", custoTotal.toFixed(2).replace(".",","))
+        */
+
+        // Usando o recurso de interpolação
+        document.write(`
+            Tempo da viagem: ${tempoMinuto} minutos 
+            <br>
+            Total do Uber - R$ ${pegaResultado(custoTotal)}
+        `)
+    </script>
+
+    <h2>Carro</h2>
+
+        <script>
+        // Carro
+        
+            // Entrada de dados
+            let autonomia = pegaNumero("Informe a autonomia")
+            let estacionamento = pegaNumero("Informe o valor de estacionamento")
+            const precoGasolina = 3.80
+            
+            // Cálculos
+            let totalGasolina = (distancia / autonomia) * precoGasolina
+            let totalBruto = totalGasolina + estacionamento
+            
+            // Saída de dados
+            /*
+            document.write("Valor do estacionamento: ", estacionamento)
+            document.write("<br>")
+            document.write("Total de gasto com o Carro ", totalBruto.toFixed(2).replace(".",","))
+            */
+
+            // Usando o recurso de interpolação
+            document.write(`
+                Valor do estacionamento: ${pegaResultado(estacionamento)}
+                <br>
+                Total de gasto com o carro ${pegaResultado(totalBruto)}
+            `)
+        </script>
+    </body>
+    </html>

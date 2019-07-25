@@ -1,0 +1,25 @@
+Comandos JavaScript
+
+alert()
+prompt()
+parseInt()
+let -> JavaScript Moderno
+var
+
+Variáveis
+
+let idade = 25
+let nome = 26
+let idade = 26
+idade = 26
+let aprovado = false
+let aprovado = true
+const CPF = "123.123.123-01"
+CPF = "321.321.321-02"
+
+HTML
+
+<h1> </h1>
+<script> -> tag de inicio de script
+    -> comandos JavaScript
+</script> -> fim JavaScript

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+    </head>
+    <body>
+        <script src="adv.js"></script>
+        <script src="https://rawgit.com/caelum/projeto01/fichaAcademiaComInterfaceGrafica/apostilaIgnore/libBrasil.js"></script>
+        <script src="https://rawgit.com/caelum/projeto01/fichaAcademiaComInterfaceGrafica/apostilaIgnore/mostra.js"></script>
+        <script src="https://rawgit.com/caelum/projeto01/calculoIdade/apostilaIgnore/libIdade.js"></script>
+    
+        <h2>Adivinhe um número entre 1 e 10</h2><br>
+
+        <h2>Quanto numeros quero sortear?</h2><br>
+
+        <!--Informando a quantidade que deseja sortear-->
+        <input type="number" id="campoNumero" min="1" max="5"><br>
+
+        <h2>Seu Palpite</h2>
+
+        <!--Informando o Palpite-->
+        <input type="number" id="campoPalpite" min="1" max="10"><br><br>
+
+        <!--Sortear número e validar se ele é igual ao digitado acima-->
+        <input type="button" value="Sortear" onclick="sortear(campoPalpite.value, campoNumero.value)">
+    </body>
+</html>
